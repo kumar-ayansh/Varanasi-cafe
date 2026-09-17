@@ -10,13 +10,13 @@
 
 const FOUNDERS = [
   {
-    name: '[FOUNDER NAME]',
-    role: '[Founder & Owner]',
+    name: 'AYANSH KUMAR YADAV',
+    role: 'DEVLOPER',
     // Path to a real photo under public/images/founders/, e.g.
     // "images/founders/founder-1.jpg". Left blank on purpose — a blank
     // photo shows a neutral placeholder avatar instead of a fake picture.
     photo: '',
-    bio: '[Add a short, real bio for this founder here.]'
+    bio: ''
   }
 
   // Example of a second founder — uncomment and fill in to add one:
