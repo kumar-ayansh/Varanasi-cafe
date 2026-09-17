@@ -15,7 +15,7 @@ const FOUNDERS = [
     // Path to a real photo under public/images/founders/, e.g.
     // "images/founders/founder-1.jpg". Left blank on purpose — a blank
     // photo shows a neutral placeholder avatar instead of a fake picture.
-    photo: '',
+    photo: 'images/onwer.jpg',
     bio: ''
   }
 
