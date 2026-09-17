@@ -1,0 +1,11 @@
+{
+  "adminPasswordHash": null,
+  "itemAvailability": {},
+  "todaysSpecial": null,
+  "upi": {
+    "enabled": false,
+    "upiId": "",
+    "businessName": "",
+    "qrImage": null
+  }
+}
