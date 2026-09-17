@@ -1,4 +1,4 @@
-// Universal loading spinner - dots style (Pinterest-like)
+// Universal loading spinner - Pinterest-style rotating dots (synced color)
 // Include this on every page via <script src="spinner.js"></script>
 
 (function () {
@@ -19,25 +19,35 @@
       transition: opacity 0.3s ease;
     }
     #global-loader .dots-spinner {
-      display: flex;
-      gap: 8px;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      animation: rotate 2.4s linear infinite, hue-cycle 3s linear infinite;
     }
     #global-loader .dots-spinner span {
+      position: absolute;
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #d4a656;
-      animation: dot-bounce 1s infinite ease-in-out;
+      background: #e0732a;
+    }
+    #global-loader .dots-spinner span:nth-child(1) {
+      top: 0;
+      left: 15px;
     }
     #global-loader .dots-spinner span:nth-child(2) {
-      animation-delay: 0.15s;
+      top: 28px;
+      left: 28px;
     }
     #global-loader .dots-spinner span:nth-child(3) {
-      animation-delay: 0.3s;
+      top: 28px;
+      left: 2px;
     }
-    @keyframes dot-bounce {
-      0%, 80%, 100% { transform: scale(0.6); opacity: 0.5; }
-      40% { transform: scale(1); opacity: 1; }
+    @keyframes rotate {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes hue-cycle {
+      to { filter: hue-rotate(360deg); }
     }
   `;
   document.head.appendChild(style);
